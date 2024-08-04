@@ -96,3 +96,107 @@ Los controladores gestionan la lógica de la aplicación y actúan como intermed
 - ControladorVistaInscripcion.java
 - ControladorVistaMembresia.java
 
+## Tecnologías utilizadas
+-  ** Lenguaje de Programación ** : Java
+-  ** Base de datos ** : MySQL
+-  ** Interfaz Gráfica ** : Swing
+-  ** Librerías ** :
+  - JDBC: Para la conexión a la base de datos
+  - JCalendar para la gestión de fechas
+ -  JavaMail para facilitar el envío de correos electrónicos
+ 
+ ## Instrucciones para compilar y ejecutar
+ 
+### Prerrequisitos
+
+-  ** Java JDK 8 o superior ** debe estar instalado en su sistema.
+-  ** MySQL Workbench **  debe estar instalado y configurado
+
+### Configuración de la base de datos
+Ejecute el siguiente script SQL para crear la base de datos y las tablas necesarias:
+
+`` sql
+-- Creación de la base de datos
+CREATE DATABASE IF NOT EXISTS gimnasio;
+USE gimnasio;
+
+-- Creación de la tabla 'Cliente'
+CREATE TABLE cliente (
+    id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
+    fecha_Nacimiento DATE NOT NULL,
+    edad INT NOT NULL,
+    peso DOUBLE NOT NULL,
+    estatura DOUBLE NOT NULL,
+    imc DOUBLE NOT NULL,
+    id_Usuario INT NOT NULL,
+    FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
+);
+
+-- Creación de la tabla 'Usuario'
+CREATE TABLE usuario (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    apeP VARCHAR(100) NOT NULL,
+    apeM VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(15),
+    rol ENUM('cliente', 'entrenador', 'encargado') NULL
+);
+
+-- Creación de la tabla 'Entrenador'
+CREATE TABLE entrenador (
+    id_Entrenador INT PRIMARY KEY AUTO_INCREMENT,
+    especialidad VARCHAR(100) NOT NULL,
+    id_Usuario INT NOT NULL,
+    FOREIGN KEY (id_Usuario) REFERENCES Usuario(id_Usuario)
+);
+
+-- Creación de la tabla 'Encargado'
+CREATE TABLE encargado (
+    id_Encargado INT PRIMARY KEY AUTO_INCREMENT,
+    id_Usuario INT NOT NULL,
+    FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
+);
+
+-- Creación de la tabla 'Rutinas'
+CREATE TABLE rutinas (
+    id_Rutina INT PRIMARY KEY AUTO_INCREMENT,
+    descripcion TEXT NOT NULL,
+    fecha_Asignacion DATE NOT NULL,
+    id_Cliente INT NOT NULL,
+    id_Entrenador INT NOT NULL,
+    FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
+    FOREIGN KEY (id_Entrenador) REFERENCES Entrenador(id_Entrenador)
+);
+
+-- Creación de la tabla 'Dietas'
+CREATE TABLE Dietas (
+    id_Dieta INT PRIMARY KEY AUTO_INCREMENT,
+    descripcion TEXT NOT NULL,
+    fecha_Asignacion DATE NOT NULL,
+    id_Cliente INT NOT NULL,
+    id_Entrenador INT NOT NULL,
+    FOREIGN KEY (id_Cliente) REFERENCES cliente(id_Cliente),
+    FOREIGN KEY (id_Entrenador) REFERENCES entrenador(id_Entrenador)
+);
+
+-- Creación de la tabla 'Membresías'
+CREATE TABLE Membresias (
+    id_Membresia INT PRIMARY KEY AUTO_INCREMENT,
+    tipo VARCHAR(50) NOT NULL,
+    precio DOUBLE NOT NULL,
+    duracion INT NOT NULL
+);
+
+-- Creación de la tabla 'Inscripciones'
+CREATE TABLE Inscripciones (
+    id_Inscripcion INT PRIMARY KEY AUTO_INCREMENT,
+    fecha_Inicio DATE NOT NULL,
+    fecha_Fin DATE NOT NULL,
+    id_Cliente INT NOT NULL,
+    id_Membresia INT NOT NULL,
+    FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
+    FOREIGN KEY (id_Membresia) REFERENCES Membresias(id_Membresia)
+);
+```
+
