@@ -270,4 +270,10 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
   > Agregar Clientes y Gestionar Clientes
 
+- Registrar y gestionar inscripciones:
+	- Es posible registrar nuevas inscripciones dentro de la base de datos.
+	- Es posible gestionar las inscripciones registradas visualizando sus registros y eliminando las inscripciones que se requiera.
 
+ ![image](https://github.com/user-attachments/assets/2dba1aae-7dbc-42f3-b6c8-5af4f43c5990)
+
+ > Agregar Inscripciones y Gestionar Inscripciones
