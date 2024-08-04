@@ -217,6 +217,8 @@ CREATE TABLE inscripciones (
 
 Para configurar la clase conexión debes cambiar los datos del url, usuario y contraseña a los que corresponden a tu base de datos, este proceso debes llevarlo a cabo también en las clases controladoras :
 
+```properties
 URL=jdbc:mysql://localhost:3306/gimnasio
 USER=root
 PASSWORD=password
+```
