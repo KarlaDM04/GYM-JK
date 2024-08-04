@@ -253,6 +253,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 ### Menú del Administrador
 
+
 ![image](https://github.com/user-attachments/assets/ffd60965-f31a-4ef3-be71-3219d769ef9b)
 
  > Menú del Encargado
@@ -285,3 +286,21 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
  ![image](https://github.com/user-attachments/assets/2dba1aae-7dbc-42f3-b6c8-5af4f43c5990)
 
  > Agregar Inscripciones y Gestionar Inscripciones
+
+
+- Registrar y gestionar membresías:
+	- Es posible registrar nuevas membresías que se adapten a las necesidades del negocio dentro de la base de datos.
+	- Es posible gestionar las membresías registradas, realizar acciones como actualizar datos como costos o duración, eliminar membresías, o simplemente visualizar los registros.
+
+![image](https://github.com/user-attachments/assets/71b352c0-41b8-450c-969b-6117741c0ac3)
+
+> Agregar Membresía y Gestionar Membresía
+
+
+- Registrar y gestionar entrenadores:
+	- Es posible registrar nuevos entrenadores dentro de la base de datos.
+	- Es posible gestionar a los entrenadores ya registrados, realizar acciones como actualizar datos, eliminar, o simplemente visualizar sus registros.
+
+ ![image](https://github.com/user-attachments/assets/bb3ef3c6-2f4d-4125-9b4b-8c19f1ce4748)
+
+ > Agregar Entrenador y Gestionar Entrenador
