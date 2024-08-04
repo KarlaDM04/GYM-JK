@@ -123,14 +123,14 @@ USE gimnasio;
 
 -- Creación de la tabla 'Cliente'
 CREATE TABLE cliente (
-    id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
-    fecha_Nacimiento DATE NOT NULL,
-    edad INT NOT NULL,
-    peso DOUBLE NOT NULL,
-    estatura DOUBLE NOT NULL,
-    imc DOUBLE NOT NULL,
-    id_Usuario INT NOT NULL,
-    FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
+  id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
+  fecha_Nacimiento DATE NOT NULL,
+  edad INT NOT NULL,
+  peso DOUBLE NOT NULL,
+  estatura DOUBLE NOT NULL,
+  imc DOUBLE NOT NULL,
+  id_Usuario INT NOT NULL,
+  FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
 );
 
 -- Creación de la tabla 'Usuario'
@@ -199,5 +199,6 @@ CREATE TABLE Inscripciones (
     FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
     FOREIGN KEY (id_Membresia) REFERENCES Membresias(id_Membresia)
 );
+
 ```
 
