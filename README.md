@@ -346,3 +346,45 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  > Posibles Adjuntos
 
+
+------------
+
+
+### Menú de  usuario Cliente
+
+![image](https://github.com/user-attachments/assets/1c93d465-9cd3-48b5-9db2-3f077a76d2a1)
+
+> Menú del Cliente
+
+
+**Descripción:** Desde esta ventana es posible realizar diversas acciones, a continuación las enlistamos:
+
+- Visualizar las membresías disponibles.
+
+![image](https://github.com/user-attachments/assets/4f75814f-ffcc-41b1-9bc1-9b30c85c3dba)
+
+> Membresías disponibles
+
+
+- Gestionar datos de su inscripción siendo posible cambiar su tipo de membresía.
+
+![image](https://github.com/user-attachments/assets/e1e11476-3da5-41dc-88e9-fbb38630c68c)
+
+> Gestionar datos de Inscripción. Los Datos enlistados son simplemente información para ejepmplificar.
+
+
+- Gestionar los datos de sus dietas y rutinas pudiendo cambiar de entrenador.
+
+![image](https://github.com/user-attachments/assets/c1c718a3-3475-42df-b0ae-eaef179f1131)
+
+> Gestionar Rutinas. Los Datos enlistados son simplemente información para ejepmplificar.
+
+---
+
+**Autores**:
+- Karla Rocío Delgado Molina
+- Jennifer Cuevas Santiago
+
+---
+
+Gracias por tu atención :).
