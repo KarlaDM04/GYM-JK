@@ -272,7 +272,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 - Registrar y gestionar clientes:
 	- Es posible registrar nuevos clientes dentro de la base de datos.
-	- Es posible gestionar a los clientes ya registrados, realizar acciones como actualizar datos, eliminar clientes, o simplemente visualizar sus registros.
+	- Es posible gestionar a los clientes ya registrados, realizar acciones como actualizar datos, eliminar clientes, o simplemente visualizar sus registros, donde es posible visualizar datos adicionales como el IMC calculado por el sistema.
 
  ![image](https://github.com/user-attachments/assets/4de55a8b-a864-4fa6-ac8c-c4ea8b8f19c0)
 
@@ -304,3 +304,16 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
  ![image](https://github.com/user-attachments/assets/bb3ef3c6-2f4d-4125-9b4b-8c19f1ce4748)
 
  > Agregar Entrenador y Gestionar Entrenador
+
+
+------------
+
+
+### Menú de  usuario Entrenador
+
+![image](https://github.com/user-attachments/assets/564f3ea9-62c1-4925-a478-98aa025dd8c7)
+
+ > Menú del Entrenador
+
+
+**Descripción:** Desde esta ventana es posible realizar diversas acciones, a continuación las enlistamos:
