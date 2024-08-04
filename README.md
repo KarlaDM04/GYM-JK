@@ -231,3 +231,11 @@ PASSWORD=password
    ```
 2. **Importa el proyecto en tu IDE** 
 3. **Compila y ejecuta el proyecto  :)** 
+
+## Ejemplos de Uso
+
+### Inicio de Sesión
+
+En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesario ingresar un nombre de usuario y una contraseña, estos deben estar guardados previamente en la base de datos para lograr ingresar. Dependiendo del rol del usuario (encargado, entrenador o cliente), serán redirigidos a diferentes ventanas con opciones distintas. 
+
+![image](https://github.com/user-attachments/assets/4e0e8472-a810-47de-9a64-30f9e77d5b8b)
