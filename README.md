@@ -97,10 +97,10 @@ Los controladores gestionan la lógica de la aplicación y actúan como intermed
 - ControladorVistaMembresia.java
 
 ## Tecnologías utilizadas
--  ** Lenguaje de Programación ** : Java
--  ** Base de datos ** : MySQL
--  ** Interfaz Gráfica ** : Swing
--  ** Librerías ** :
+-  **Lenguaje de Programación** : Java
+-  **Base de datos** : MySQL
+-  **Interfaz Gráfica** : Swing
+-  **Librerías** :
   - JDBC: Para la conexión a la base de datos
   - JCalendar para la gestión de fechas
  -  JavaMail para facilitar el envío de correos electrónicos
@@ -109,8 +109,8 @@ Los controladores gestionan la lógica de la aplicación y actúan como intermed
  
 ### Prerrequisitos
 
--  ** Java JDK 8 o superior ** debe estar instalado en su sistema.
--  ** MySQL Workbench **  debe estar instalado y configurado
+-  **Java JDK 8 o superior** debe estar instalado en su sistema.
+-  **MySQL Workbench**  debe estar instalado y configurado
 
 ### Configuración de la base de datos
 
