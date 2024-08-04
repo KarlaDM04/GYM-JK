@@ -43,7 +43,6 @@ Las clases del modelo representan las entidades del sistema y gestionan la lógi
 ### Vista
 
 Contiene las clases que gestionan la interfaz gráfica del usuario, es decir, donde se realizó el diseño de las interfaces utilizadas para mostrar el funcionamiento del sistema:
-Aquí está la lista correcta de nombres de los archivos en el formato solicitado:
 
 - EnvioCorreos.java
 - GestionInscripcionCliente.java
@@ -73,9 +72,8 @@ Aquí está la lista correcta de nombres de los archivos en el formato solicitad
 - VisualizarClientes.java
 
 ### Controlador
-Los controladores gestionan la lógica de la aplicación y actúan como intermediarios entre el modelo y la vista. Manejan los eventos de la interfaz de usuario y actualizan el modelo.
+Los controladores gestionan la lógica de la aplicación y actúan como intermediarios entre el modelo y la vista. Manejan los eventos de la interfaz de usuario y actualizan el modelo:
 
-Aquí tienes la lista de nombres de los archivos en el formato solicitado:
 
 - Conexion.java
 - ControladorCliente.java
