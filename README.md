@@ -262,4 +262,12 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  > Gestionar Usuarios
 
+- Registrar y gestionar clientes:
+	- Es posible registrar nuevos clientes dentro de la base de datos.
+	- Es posible gestionar a los clientes ya registrados, realizar acciones como actualizar datos, eliminar clientes, o simplemente visualizar sus registros.
+
+ ![image](https://github.com/user-attachments/assets/4de55a8b-a864-4fa6-ac8c-c4ea8b8f19c0)
+
+  > Agregar Clientes y Gestionar Clientes
+
 
