@@ -246,3 +246,20 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 ![image](https://github.com/user-attachments/assets/3b55eddd-9cef-4f6f-9be6-547214cac5df)
 
+## Accede al Menú de opciones
+
+### Menú del Administrador
+
+![image](https://github.com/user-attachments/assets/ffd60965-f31a-4ef3-be71-3219d769ef9b)
+
+**Descripción:** Desde esta ventana es posible realizar diversas acciones, a continuación las enlistamos:
+
+- Registrar y gestionar usuarios:
+	- Es posible registrar nuevos usuarios dentro de la base de datos.
+	- Es posible gestionar a los usuarios ya registrados, realizar acciones como actualizar datos, eliminar usuarios, o simplemente visualizar sus registros.
+
+ ![image](https://github.com/user-attachments/assets/77ba43f9-7f3a-4936-86f7-795d0b7aabe3)
+
+ > Gestionar Usuarios
+
+
