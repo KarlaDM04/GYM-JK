@@ -123,33 +123,38 @@ USE gimnasio;
 
 -- Creación de la tabla 'Cliente'
 CREATE TABLE cliente (
-    id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
-    fecha_Nacimiento DATE NOT NULL,
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_nacimiento DATE NOT NULL,
     edad INT NOT NULL,
-    peso DOUBLE NOT NULL,
-    estatura DOUBLE NOT NULL,
-    imc DOUBLE NOT NULL,
-    id_Usuario INT NOT NULL,
-    FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
+    peso DECIMAL(5,2) NOT NULL,
+    estatura DECIMAL(5,2) NOT NULL,
+    imc DECIMAL(5,2) NOT NULL,
+    id_usuario INT,
+    nombre VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
 -- Creación de la tabla 'Usuario'
 CREATE TABLE usuario (
-    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
-    apeP VARCHAR(100) NOT NULL,
-    apeM VARCHAR(100) NOT NULL,
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apeP VARCHAR(50) NOT NULL,
+    apeM VARCHAR(50) NOT NULL,
     correo VARCHAR(100) NOT NULL,
-    telefono VARCHAR(15),
-    rol ENUM('cliente', 'entrenador', 'encargado') NULL
+    telefono VARCHAR(20) NOT NULL,
+    rol VARCHAR(20) NOT NULL,
+    contrasenia VARCHAR(16000) NOT NULL
 );
+
 
 -- Creación de la tabla 'Entrenador'
 CREATE TABLE entrenador (
-    id_Entrenador INT PRIMARY KEY AUTO_INCREMENT,
+    id_entrenador INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
     especialidad VARCHAR(100) NOT NULL,
-    id_Usuario INT NOT NULL,
-    FOREIGN KEY (id_Usuario) REFERENCES Usuario(id_Usuario)
+    id_usuario INT,
+    turno VARCHAR(20) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
 -- Creación de la tabla 'Encargado'
@@ -161,25 +166,30 @@ CREATE TABLE encargado (
 
 -- Creación de la tabla 'Rutinas'
 CREATE TABLE rutinas (
-    id_Rutina INT PRIMARY KEY AUTO_INCREMENT,
+    id_rutina INT AUTO_INCREMENT PRIMARY KEY,
     descripcion TEXT NOT NULL,
-    fecha_Asignacion DATE NOT NULL,
-    id_Cliente INT NOT NULL,
-    id_Entrenador INT NOT NULL,
-    FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
-    FOREIGN KEY (id_Entrenador) REFERENCES Entrenador(id_Entrenador)
+    fecha_asignacion DATE NOT NULL,
+    fecha_finaliza DATE NOT NULL,
+    id_cliente INT,
+    nombre_cliente VARCHAR(100) NOT NULL,
+    id_entrenador INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_entrenador) REFERENCES entrenador(id_entrenador)
 );
 
 -- Creación de la tabla 'Dietas'
-CREATE TABLE Dietas (
-    id_Dieta INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE dietas (
+    id_dieta INT AUTO_INCREMENT PRIMARY KEY,
     descripcion TEXT NOT NULL,
-    fecha_Asignacion DATE NOT NULL,
-    id_Cliente INT NOT NULL,
-    id_Entrenador INT NOT NULL,
-    FOREIGN KEY (id_Cliente) REFERENCES cliente(id_Cliente),
-    FOREIGN KEY (id_Entrenador) REFERENCES entrenador(id_Entrenador)
+    fecha_asignacion DATE NOT NULL,
+    fecha_finaliza DATE NOT NULL,
+    id_cliente INT,
+    nombre_cliente VARCHAR(100) NOT NULL,
+    id_entrenador INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_entrenador) REFERENCES entrenador(id_entrenador)
 );
+
 
 -- Creación de la tabla 'Membresías'
 CREATE TABLE Membresias (
@@ -190,13 +200,15 @@ CREATE TABLE Membresias (
 );
 
 -- Creación de la tabla 'Inscripciones'
-CREATE TABLE Inscripciones (
-    id_Inscripcion INT PRIMARY KEY AUTO_INCREMENT,
-    fecha_Inicio DATE NOT NULL,
-    fecha_Fin DATE NOT NULL,
-    id_Cliente INT NOT NULL,
-    id_Membresia INT NOT NULL,
-    FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
-    FOREIGN KEY (id_Membresia) REFERENCES Membresias(id_Membresia)
+CREATE TABLE inscripciones (
+    id_inscripcion INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_inicio DATE NOT NULL,
+    fecha_fin DATE NOT NULL,
+    id_cliente INT,
+    nombre_cliente VARCHAR(100) NOT NULL,
+    id_membresia INT,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+    FOREIGN KEY (id_membresia) REFERENCES membresias(id_membresia)
 );
+
 ```
