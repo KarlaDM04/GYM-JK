@@ -222,3 +222,12 @@ URL=jdbc:mysql://localhost:3306/gimnasio
 USER=root
 PASSWORD=password
 ```
+
+### Compilación y Ejecución
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/KarlaDM04/GYM-JK.git
+   ```
+2. **Importa el proyecto en tu IDE** 
+3. **Compila y ejecuta el proyecto  :)** 
