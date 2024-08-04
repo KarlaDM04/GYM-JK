@@ -248,6 +248,9 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 ## Accede al Menú de opciones
 
+------------
+
+
 ### Menú del Administrador
 
 ![image](https://github.com/user-attachments/assets/ffd60965-f31a-4ef3-be71-3219d769ef9b)
