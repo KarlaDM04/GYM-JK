@@ -113,24 +113,24 @@ Los controladores gestionan la lógica de la aplicación y actúan como intermed
 -  ** MySQL Workbench **  debe estar instalado y configurado
 
 ### Configuración de la base de datos
+
 Ejecute el siguiente script SQL para crear la base de datos y las tablas necesarias:
 
 `` sql
-
 -- Creación de la base de datos
 CREATE DATABASE IF NOT EXISTS gimnasio;
 USE gimnasio;
 
 -- Creación de la tabla 'Cliente'
 CREATE TABLE cliente (
-  id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
-  fecha_Nacimiento DATE NOT NULL,
-  edad INT NOT NULL,
-  peso DOUBLE NOT NULL,
-  estatura DOUBLE NOT NULL,
-  imc DOUBLE NOT NULL,
-  id_Usuario INT NOT NULL,
-  FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
+    id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
+    fecha_Nacimiento DATE NOT NULL,
+    edad INT NOT NULL,
+    peso DOUBLE NOT NULL,
+    estatura DOUBLE NOT NULL,
+    imc DOUBLE NOT NULL,
+    id_Usuario INT NOT NULL,
+    FOREIGN KEY (id_Usuario) REFERENCES usuario(id_Usuario)
 );
 
 -- Creación de la tabla 'Usuario'
@@ -199,6 +199,4 @@ CREATE TABLE Inscripciones (
     FOREIGN KEY (id_Cliente) REFERENCES Cliente(id_Cliente),
     FOREIGN KEY (id_Membresia) REFERENCES Membresias(id_Membresia)
 );
-
 ```
-
