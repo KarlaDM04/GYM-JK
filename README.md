@@ -116,6 +116,7 @@ Los controladores gestionan la lógica de la aplicación y actúan como intermed
 Ejecute el siguiente script SQL para crear la base de datos y las tablas necesarias:
 
 `` sql
+
 -- Creación de la base de datos
 CREATE DATABASE IF NOT EXISTS gimnasio;
 USE gimnasio;
