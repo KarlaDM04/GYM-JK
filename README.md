@@ -256,7 +256,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 ![image](https://github.com/user-attachments/assets/ffd60965-f31a-4ef3-be71-3219d769ef9b)
 
- > Menú del Encargado
+ > Menú del Encargado. 
 
 
 **Descripción:** Desde esta ventana es posible realizar diversas acciones, a continuación las enlistamos:
@@ -267,7 +267,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  ![image](https://github.com/user-attachments/assets/77ba43f9-7f3a-4936-86f7-795d0b7aabe3)
 
- > Gestionar Usuarios
+ > Gestionar Usuarios.Los Datos enlistados son simplemente información para ejepmplificar.
 
 
 - Registrar y gestionar clientes:
@@ -276,7 +276,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  ![image](https://github.com/user-attachments/assets/4de55a8b-a864-4fa6-ac8c-c4ea8b8f19c0)
 
-  > Agregar Clientes y Gestionar Clientes
+  > Agregar Clientes y Gestionar Clientes. Los Datos enlistados son simplemente información para ejepmplificar.
 
 
 - Registrar y gestionar inscripciones:
@@ -285,7 +285,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  ![image](https://github.com/user-attachments/assets/2dba1aae-7dbc-42f3-b6c8-5af4f43c5990)
 
- > Agregar Inscripciones y Gestionar Inscripciones
+ > Agregar Inscripciones y Gestionar Inscripciones. Los Datos enlistados son simplemente información para ejepmplificar.
 
 
 - Registrar y gestionar membresías:
@@ -294,7 +294,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 ![image](https://github.com/user-attachments/assets/71b352c0-41b8-450c-969b-6117741c0ac3)
 
-> Agregar Membresía y Gestionar Membresía
+> Agregar Membresía y Gestionar Membresía. Los Datos enlistados son simplemente información para ejepmplificar.
 
 
 - Registrar y gestionar entrenadores:
@@ -303,7 +303,7 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
  ![image](https://github.com/user-attachments/assets/bb3ef3c6-2f4d-4125-9b4b-8c19f1ce4748)
 
- > Agregar Entrenador y Gestionar Entrenador
+ > Agregar Entrenador y Gestionar Entrenador. Los Datos enlistados son simplemente información para ejepmplificar.
 
 
 ------------
@@ -317,3 +317,32 @@ En esta pantalla, los usuarios pueden iniciar sesión en el sistema. Es necesari
 
 
 **Descripción:** Desde esta ventana es posible realizar diversas acciones, a continuación las enlistamos:
+
+- Registrar y gestionar rutinas:
+	- Es posible registrar nuevas rutinas de entrenamiento dentro de la base de datos eligiendo a un cliente al que se le asignará y a un entrenador asociado al registro.
+	- Es posible gestionar las rutinas ya registradas, realizar acciones como actualizar las rutinas, eliminarlas, o simplemente visualizar sus registros.
+
+![image](https://github.com/user-attachments/assets/0054065b-7750-4fff-b527-1b3bba55102a)
+
+ > Añadir Rutina y Gestionar Rutinas. Los Datos enlistados son simplemente información para ejepmplificar.
+
+
+- Registrar y gestionar dietas:
+	- Es posible registrar nuevas dietaso dentro de la base de datos eligiendo a un cliente al que se le asignará y a un entrenador asociado al registro.
+	- Es posible gestionar las dietas ya registradas, realizar acciones como actualizar los menús de las dietas, eliminarlas, o simplemente visualizar sus registros.
+
+ ![image](https://github.com/user-attachments/assets/64401da3-de1c-48e6-8c20-a8fc62a68716)
+
+  > Añadir Dieta y Gestionar Dietas. Los Datos enlistados son simplemente información para ejepmplificar.
+
+
+- Enviar correos electrónicos con documentos adjuntos
+
+![image](https://github.com/user-attachments/assets/868b8a58-d87c-4fa0-ad0c-91f44b01958b)
+
+ > Envío de Correo Electrónico.
+
+![image](https://github.com/user-attachments/assets/292bf0aa-6000-4cbd-9fe0-fd62b2f5648a)
+
+ > Posibles Adjuntos
+
